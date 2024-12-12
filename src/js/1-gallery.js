@@ -64,6 +64,9 @@ const images = [
   },
 ];
 
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const gallery = document.querySelector('.gallery');
 function createImageMarkup(image) {
   const li = document.createElement(`li`);
@@ -74,7 +77,6 @@ function createImageMarkup(image) {
   const img = document.createElement(`img`);
   img.classList.add(`gallery-image`);
   img.src = image.preview;
-  img.dataset.source = image.original;
   img.alt = image.description;
   li.appendChild(a);
   a.appendChild(img);
@@ -88,11 +90,8 @@ images.forEach(image => {
 });
 gallery.appendChild(fragment);
 
-function openModal(event) {
-  event.preventDefault();
-  const instance = basicLightbox.create(
-    `<img src="${event.target.dataset.source}" width="800">`
-  );
-  instance.show();
-}
-gallery.addEventListener(`click`, openModal);
+new SimpleLightbox('.gallery a', {
+  captionDelay: 250,
+  captionsData: `alt`,
+  captionPosition: `bottom`,
+});
