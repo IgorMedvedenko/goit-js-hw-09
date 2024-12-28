@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background: #fff;
+  background-color: fff;
   padding: 24px 156px;
   margin: 0 auto;
   width: 1440px;
@@ -31,4 +31,71 @@ ul {
 }
 .hidden-scroll {
   padding-right: 0 !important;
+}
+/*---2-form---*/
+.feedback-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background-color: #f5f5f5;
+}
+.label {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.email {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+.email:hover {
+  border: 1px solid #000;
+}
+
+.message {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+.message:hover {
+  border: 1px solid #000;
+}
+
+.button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 16px;
+}
+.button:hover {
+  background: #6c8cff;
 }

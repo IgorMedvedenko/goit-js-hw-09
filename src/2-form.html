@@ -9,7 +9,30 @@
   </head>
   <body>
     <a class="back-link" href="./index.html">Go back</a>
-    <!-- <ul class="gallery"></ul> -->
+
+    <form class="feedback-form" autocomplete="off">
+      <label class="label">
+        Email
+        <input
+          class="email"
+          type="email"
+          name="email"
+          autofocus
+          placeholder="Type area"
+        />
+      </label>
+      <label class="label">
+        Message
+        <textarea
+          class="message"
+          name="message"
+          rows="8"
+          placeholder="Type area"
+        ></textarea>
+      </label>
+      <button class="button" type="submit">Submit</button>
+    </form>
+
     <script type="module" src="./js/2-form.js"></script>
   </body>
 </html>
